@@ -1,7 +1,5 @@
 package org.usfirst.frc.team5254.robot.commands;
 
-
-
 import org.usfirst.frc.team5254.robot.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
@@ -9,10 +7,10 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class DrivetrainShiftUp extends Command {
+public class DrivetrainSlowTurn extends Command {
 
-    public DrivetrainShiftUp() {
-        requires(Robot.Drivetrain);
+    public DrivetrainSlowTurn() {
+        reqires(Robot.Drivetrain)
     }
 
     // Called just before this Command runs the first time
@@ -21,7 +19,7 @@ public class DrivetrainShiftUp extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.Drivetrain.Shift.Up
+    	Robot.Drivetrain.Slow.Turn
     }
 
     // Make this return true when this Command no longer needs to run execute()
